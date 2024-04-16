@@ -1,0 +1,135 @@
+/* Styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bg-color: #333;
+    --secondary-bg-color: #444; 
+    --primary-text-color: white; 
+    --link-hover-color: underline;
+    --link-hover-bg-color: #111; 
+}
+
+/* Navbar fixée */
+nav {
+    background-color: var(--primary-bg-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65px;
+}
+
+/* Logo aligné à gauche */
+.logo-container {
+    padding: 10px;
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+}
+
+/* Liens de navigation alignés au centre */
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-links ul li a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 15px;
+}
+
+.nav-links ul li a:hover {
+    background-color: var(--link-hover-bg-color);
+    text-decoration: var(--link-hover-color);
+}
+
+/* Section inscription */
+.inscription a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 15px;
+}
+
+.inscription a:hover {
+    text-decoration: var(--link-hover-color);
+    background-color: var(--link-hover-bg-color);
+}
+
+/* Slider */
+.slider {
+    top: 20px;
+    width: 100%;
+    height: 30%;
+}
+
+/* Présentation de l'association */
+.presentation {
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px; /* Ajoutez des marges */
+    padding: 20px; /* Ajoutez des paddings */
+}
+
+.presentation .photo-de-presentation {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.presentation .photo-de-presentation img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Activité */
+.activité {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.activité img {
+    width: calc(25% - 10px); /* Pour que chaque image prenne 25% de la largeur avec une marge de 10px entre elles */
+    margin-bottom: 20px;
+    padding: 10px; /* Ajouter du padding autour de chaque image */
+    box-sizing: border-box; /* Inclure le padding dans la largeur de l'image */
+}
+
+.activité img:last-child {
+    margin-right: 0; /* Pour enlever la marge à droite de la dernière image de chaque ligne */
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--secondary-bg-color); /* Ajouter une bordure supérieure */
+}
+
+/* Footer content */
+.footer-content p {
+    margin: 0;
+}
