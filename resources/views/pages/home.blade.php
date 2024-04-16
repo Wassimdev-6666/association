@@ -1,9 +1,9 @@
 <x-app>
     <!-- Slider -->
     <div class="slider">
-         <div><img src="{{ asset('images/activite/slider3.jpg') }}" alt="Slide 3"></div>
-        <div><img src="{{ asset('images/activite/slider3.jpg') }}" alt="Slide 1"></div>
-        <div><img src="{{ asset('images/activite/slider3.jpg') }}" alt="Slide 2"></div>
+         <img src="{{ asset('images/activite/slider3.jpg') }}" alt="Slide 3">
+        <img src="{{ asset('images/activite/image1.jpg') }}" alt="Slide 1">
+        <img src="{{ asset('images/activite/image2.jpg') }}" alt="Slide 2">
         
         <!-- Ajoutez plus de diapositives au besoin -->
     </div>
@@ -43,18 +43,3 @@
 </x-app>
 
 <!-- Scripts JavaScript -->
-
-<script>
-    // Initialisation du slider avec les options
-    $(document).ready(function(){
-        $('.slider').slick({
-            autoplay: true, // Lecture automatique
-            autoplaySpeed: 3000, // Vitesse de lecture automatique en millisecondes
-            dots: true, // Affichage des indicateurs de pagination
-            arrows: true, // Affichage des flèches de navigation
-            prevArrow: '<button type="button" class="slick-prev">&#10094;</button>', // Flèche précédente
-            nextArrow: '<button type="button" class="slick-next">&#10095;</button>' // Flèche suivante
-            // Ajoutez d'autres options au besoin
-        });
-    });
-</script>

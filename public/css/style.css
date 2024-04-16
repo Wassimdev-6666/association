@@ -70,10 +70,27 @@ nav {
 
 /* Slider */
 .slider {
+    /* background-color: aquamarine; */
+    top: 20px;
+    width: auto;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    transition: ease-in 3s;
+}
+.slider img{
+    height: 35rem;
+    width: min-content;
+    object-fit: contain;
+
+
+}
+/* .slider{
+    background-color: aquamarine;
     top: 20px;
     width: 100%;
     height: 30%;
-}
+} */
 
 /* Présentation de l'association */
 .presentation {
