@@ -7,6 +7,6 @@
             arrows: true, // Affichage des flèches de navigation
             prevArrow: '<button type="button" class="slick-prev">&#10094;</button>', // Flèche précédente
             nextArrow: '<button type="button" class="slick-next">&#10095;</button>' // Flèche suivante
-            // Ajoutez d'autres options au besoins
+            // Ajoutez d'autres options au besoinsdsdsdsfsf
         });
     });
