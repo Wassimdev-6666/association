@@ -12,10 +12,11 @@
 
 @include('pages.navbar')
     {{$slot}}
+    
 @include('pages.footer')
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery est requis pour Slick Slider -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> <!-- Intégration de Slick Slider -->
 <script src="{{ asset('javascript/script.js') }}"></script>
 </body>
-</html>
+</html> 
