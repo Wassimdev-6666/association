@@ -6,8 +6,11 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
-
+body{
+    height: 3000px;
+}
 :root {
     --primary-bg-color: #333;
     --secondary-bg-color: #444; 
@@ -73,7 +76,7 @@ nav {
     /* background-color: aquamarine; */
     top: 20px;
     width: auto;
-    height: max-content;
+    height: 45rem;
     display: flex;
     align-items: center;
     transition: ease-in 3s;
@@ -82,54 +85,104 @@ nav {
     height: 35rem;
     width: min-content;
     object-fit: contain;
-
-
 }
-/* .slider{
-    background-color: aquamarine;
-    top: 20px;
-    width: 100%;
-    height: 30%;
-} */
-
 /* Présentation de l'association */
 .presentation {
-    top: 20px;
+    top: 2rem;
+    width: 100%;
+    height: 50rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 20px; /* Ajoutez des marges */
-    padding: 20px; /* Ajoutez des paddings */
+    justify-content: space-around;
+    margin: 2rem; /* Ajoutez des marges */
+    padding: 2rem; /* Ajoutez des paddings */
+    /* background-color: aquamarine; */
+}
+.presentation div{
+    width: 40%;
+    /* background-color: brown; */
+    padding: 1rem;
+}
+.presentation div h2{
+    margin: 1rem;
+}
+.presentation div p{
+    font-size: 1rem;
+    color: var(--secondary-bg-color);
+}
+.presentation  img {
+    object-fit: contain ;
+    width: 40%;
+    /* background-color: rgb(75, 27, 206); */
+    /* height: auto; */
 }
 
-.presentation .photo-de-presentation {
-    margin-top: 20px;
+@media screen and (max-width: 900px) {
+    .presentation {
+      background-color: #444;
+      flex-direction: column;
+      margin: 0;
+      
+    }
+    .presentation div{
+        width: 80%;
+    }
+    .presentation img{
+        margin-top: 2rem;
+        width: 80%;
+  }
+}
+/* -------------------------------------- Activité------------------------------- */
+.section-activites {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.section-activites h1{
+    color: var(--link-hover-bg-color);
+    /* background-color: aquamarine; */
+    width: 100%;
+    margin: 3rem;
+    font-size: 2rem;
+}
+.section-activites .activité {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.presentation .photo-de-presentation img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-/* Activité */
-.activité {
+.section-activites .activité .container-image {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.activité img {
-    width: calc(25% - 10px); /* Pour que chaque image prenne 25% de la largeur avec une marge de 10px entre elles */
-    margin-bottom: 20px;
-    padding: 10px; /* Ajouter du padding autour de chaque image */
-    box-sizing: border-box; /* Inclure le padding dans la largeur de l'image */
+.section-activites .activité img {
+    flex: 1 0 calc(25% - 20px); /* Each image takes 25% of the width with a margin of 10px on each side */
+    margin: 10px; /* Margin between images */
+    max-width: 300px; /* Maximum width for images */
+    box-sizing: border-box; /* Include padding and border in the width */
 }
 
-.activité img:last-child {
-    margin-right: 0; /* Pour enlever la marge à droite de la dernière image de chaque ligne */
+/* Media queries to adjust number of items per row */
+@media (max-width: 1200px) {
+    .section-activites .activité img {
+        flex-basis: calc(33.33% - 20px); /* Each image takes 33.33% of the width with a margin of 10px on each side */
+    }
+}
+
+@media (max-width: 800px) {
+    .section-activites .section-activites .activité img {
+        flex-basis: calc(50% - 20px); /* Each image takes 50% of the width with a margin of 10px on each side */
+    }
+}
+
+@media (max-width: 600px) {
+    .section-activites .activité img {
+        flex-basis: calc(100% - 20px); /* Each image takes 100% of the width with a margin of 10px on each side */
+    }
 }
 
 
@@ -143,6 +196,10 @@ footer {
     color: var(--primary-text-color);
     text-align: center;
     padding: 20px;
+    position: absolute;
+    height: 10rem;
+    width: 100%;
+    bottom: 0;
     border-top: 1px solid var(--secondary-bg-color); /* Ajouter une bordure supérieure */
 }
 
