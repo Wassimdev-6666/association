@@ -9,7 +9,9 @@
     font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 }
 body{
-    height: 3000px;
+    position: relative; 
+    /* height: 3000px; */
+    padding-bottom: 10rem;
 }
 :root {
     --primary-bg-color: #333;
@@ -197,13 +199,7 @@ footer {
     text-align: center;
     padding: 20px;
     position: absolute;
-    height: 10rem;
-    width: 100%;
     bottom: 0;
-    border-top: 1px solid var(--secondary-bg-color); /* Ajouter une bordure supérieure */
-}
-
-/* Footer content */
-.footer-content p {
-    margin: 0;
+    width: 100%;
+    border-top: 1px solid var(--secondary-bg-color);
 }
