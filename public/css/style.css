@@ -11,7 +11,7 @@
 body{
     position: relative; 
     /* height: 3000px; */
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
 }
 :root {
     --primary-bg-color: #333;
@@ -84,7 +84,7 @@ nav {
     transition: ease-in 3s;
 }
 .slider img{
-    height: 30rem;
+    height: 35rem;
     width: min-content;
     object-fit: contain;
 }
@@ -96,7 +96,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 2rem; /* Ajoutez des marges */
     padding: 2rem; /* Ajoutez des paddings */
     /* background-color: aquamarine; */
 }
@@ -121,7 +120,7 @@ nav {
 
 @media screen and (max-width: 900px) {
     .presentation {
-      background-color: #444;
+      /* background-color: #444; */
       flex-direction: column;
       margin: 0;
       
