@@ -84,7 +84,7 @@ nav {
     transition: ease-in 3s;
 }
 .slider img{
-    height: 35rem;
+    height: 30rem;
     width: min-content;
     object-fit: contain;
 }
